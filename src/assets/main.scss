@@ -1,0 +1,27 @@
+@import './input.scss';
+@import './controllers.scss';
+@import './scroll.scss';
+
+body {
+    background-image: url('../Public/background.png');
+    background-repeat: repeat;
+    background-size: 1000px 250px;
+    animation: slide 35s linear infinite;
+
+    font-family: 'Poppins', sans-serif;
+    padding: 0.6em;
+    overflow-x: hidden;
+
+    @media (max-width: 600px) {
+        padding: 0.2em;
+    }
+}
+
+@keyframes slide {
+    0% {
+        background-position: 0px 0px;
+    }
+    100% {
+        background-position: -1000px 750px;
+    }
+}
